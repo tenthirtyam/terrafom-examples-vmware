@@ -32,7 +32,6 @@ Examples are provided for the following:
 - vSphere NFS Datastore
 - vSphere Storage Policy for Tanzu
 
-
 **VMware NSX-T Data Center**
 - NSX Segments for Existing Networks in vRealize Automation
 - NSX Segments for On-Demand Networks in vRealize Automation
