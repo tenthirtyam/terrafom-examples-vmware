@@ -1,0 +1,22 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-w01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Settings
+
+vsphere_datacenter = "sfo-w01-dc01"
+vsphere_datastore  = "sfo-w01-cl01-ds-vsan01"
+
+# Content Library Settings
+
+vsphere_content_library_name                   = "sfo-w01-lib01-tanzu"
+vsphere_content_library_description            = "Subscribed Content Library for vSphere with Tanzu"
+vsphere_content_library_subscription_url       = "https://wp-content.vmware.com/v2/latest/lib.json"
+vsphere_content_library_automatic_sync         = true

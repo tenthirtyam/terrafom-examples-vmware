@@ -1,0 +1,38 @@
+# MacOS
+## ignore desktop services files
+**/.DS_Store
+
+# Microsoft Visual Code
+## ignore setting files
+.vscode/settings.json
+
+# Hashicorp Terraform
+
+## ignore local .terraform directories
+**/.terraform/*
+
+## ignore .tfstate files
+*.tfstate
+*.tfstate.*
+
+## ignore crash log files
+crash.log
+
+# ignore .tfvars files
+*.tfvars
+
+# ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ignore the plan output of command: terraform plan -out=myplan
+*tfplan*
+
+# ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# ignore lock files
+.terraformr.lock.hcl

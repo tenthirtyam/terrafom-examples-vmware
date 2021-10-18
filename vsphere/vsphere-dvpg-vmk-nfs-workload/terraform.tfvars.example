@@ -1,0 +1,26 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-w01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Settings
+
+vsphere_datacenter = "sfo-w01-dc01"
+vsphere_cluster_hosts = [
+  "sfo01-w01-esx01.rainpole.io",
+  "sfo01-w01-esx02.rainpole.io",
+  "sfo01-w01-esx03.rainpole.io",
+  "sfo01-w01-esx04.rainpole.io"
+]
+vsphere_cluster_dvs           = "sfo-w01-cl01-vds01"
+vsphere_cluster_dvpg_name     = "sfo-w01-cl01-vds01-pg-nfs"
+vsphere_cluster_dvpg_vlan_id  = "3967"
+vsphere_cluster_dvpg_mtu      = "9000"
+vsphere_cluster_dvpg_netmask  = "255.255.252.0"
+vsphere_cluster_dvpg_netstack = "defaultTcpipStack"

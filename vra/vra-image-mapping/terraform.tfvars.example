@@ -1,0 +1,24 @@
+##################################################################################
+# ENDPOINT
+##################################################################################
+
+vra_url       = "https://xint-vra01.rainpole.io"
+vra_api_token = "**********************************************"
+vra_insecure  = false
+
+##################################################################################
+# IMAGE MAPPINGS
+##################################################################################
+
+cloud_account_vsphere = "sfo-w01-vc01"
+region                = "Datacenter:datacenter-3"
+image_mappings = {
+  image0 = {
+    name       = "linux-ubuntu-server-lts"
+    image_name = "sfo-w01-lib01 / linux-ubuntu-server-lts" // Format = "publisher_content_library_name / machine_image_name"
+  }
+  image1 = {
+    name       = "windows-server-standard"
+    image_name = "sfo-w01-lib01 / windows-server-standard" // Format = "publisher_content_library_name / machine_image_name"
+  }
+}

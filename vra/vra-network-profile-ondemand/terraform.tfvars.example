@@ -1,0 +1,30 @@
+##################################################################################
+# ENDPOINT
+##################################################################################
+
+vra_url       = "https://xint-vra01.rainpole.io"
+vra_api_token = "**********************************************"
+vra_insecure  = false
+
+##################################################################################
+# NETWORK PROFILE - ON-DEMAND
+##################################################################################
+
+# Network Profile
+
+cloud_account_nsxt              = "sfo-w01-nsx01"
+cloud_account_vsphere           = "sfo-w01-vc01"
+region                          = "Datacenter:datacenter-3"
+name                            = "net-ondemand-sfo-w01-vc01"
+description                     = "On-Demand Networks - Workload Domain 01"
+isolation_type                  = "SUBNET"
+isolated_network_domain_cidr    = "192.168.128.0/18"
+isolated_network_cidr_prefix    = "28"
+onDemandNetworkIPAssignmentType = "static"
+network_domain_name             = "overlay-tz-sfo-w01-nsx01.sfo.rainpole.io"
+subnet_name                     = "sfo-outbound-192-168-64-0-22"
+ip_range_name                   = "192-168-64-0-22"
+ip_range_description            = "On-Demand: Network Static IP Range"
+start_ip_address                = "192.168.64.20"
+end_ip_address                  = "192.168.67.250"
+ip_version                      = "IPv4"

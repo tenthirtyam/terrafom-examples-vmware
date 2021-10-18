@@ -1,0 +1,23 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-w02-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Settings
+
+vsphere_datacenter = "sfo-w02-dc01"
+vsphere_datastore  = "sfo-w02-cl01-ds-vsan01"
+
+# Content Library Settings
+
+vsphere_content_library_name                   = "sfo-w02-lib01"
+vsphere_content_library_description            = "Subscribed Content Library for sfo-w02."
+vsphere_content_library_subscription_url       = "https://sfo-m01-vc01.sfo.rainpole.io:443/cls/vcsp/lib/<uuid>/lib.json" // Update the <uuid>.
+vsphere_content_library_automatic_sync         = true
+vsphere_content_library_on_demand              = false

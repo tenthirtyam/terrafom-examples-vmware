@@ -1,0 +1,43 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-w01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Settings
+
+vsphere_datacenter = "sfo-w01-dc01"
+vsphere_cluster_hosts = [
+  "sfo01-w01-esx01.rainpole.io",
+  "sfo01-w01-esx02.rainpole.io",
+  "sfo01-w01-esx03.rainpole.io",
+  "sfo01-w01-esx04.rainpole.io"
+]
+
+# NFS Datastore Settings
+
+vsphere_datastore_type              = "NFS"
+vsphere_datastore_nfs_access_mode   = "readWrite"
+vsphere_datastore_nfs_target_folder = "nfs"
+vsphere_datastore_nfs = {
+  datastore0 = {
+    name         = "remote-nfs-0"
+    remote_hosts = ["192.168.179.250"]
+    remote_path  = "/volume1/remote-nfs-0"
+  },
+  datastore1 = {
+    name         = "remote-nfs-1"
+    remote_hosts = ["192.168.179.250"]
+    remote_path  = "/volume1/remote-nfs-1"
+  },
+  datastore2 = {
+    name         = "remote-nfs-2"
+    remote_hosts = ["192.168.179.250"]
+    remote_path  = "/volume1/remote-nfs-2"
+  }
+}

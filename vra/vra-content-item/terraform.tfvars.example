@@ -1,0 +1,19 @@
+##################################################################################
+# ENDPOINT
+##################################################################################
+
+vra_url       = "https://xint-vra01.rainpole.io"
+vra_api_token = "**********************************************"
+vra_insecure  = false
+
+##################################################################################
+# CATALOG SOURCE ENTITLEMENTS
+// Note: UI is 'content sharing' but provider is 'catalog source entitlement'.
+##################################################################################
+
+catalog_source_entitlements = {
+  catalog_source_entitlement0 = {
+    source_name  = "Sample - Cloud Templates"
+    project_name = "Sample"
+  }
+}

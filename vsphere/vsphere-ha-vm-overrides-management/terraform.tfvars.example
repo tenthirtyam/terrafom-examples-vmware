@@ -1,0 +1,48 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-m01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Objects
+
+vsphere_datacenter = "sfo-m01-dc01"
+vsphere_cluster    = "sfo-m01-cl01"
+
+# vSphere HA - Virtual Machine Startup Priority Overrides
+
+startup = {
+  startup0 = {
+    vm = "sfo-m01-vc01"
+    level = "high"
+  },
+  startup1 = {
+    vm = "sfo-m01-nsx01a"
+    type = "high"
+  },
+  startup2 = {
+    vm = "sfo-m01-nsx01b"
+    type = "high"
+  },
+  startup3 = {
+    vm = "sfo-m01-nsx01c"
+    type = "high"
+  },
+  startup4 = {
+    vm = "sfo-vcf01"
+    type = "medium"
+  },
+  startup5 = {
+    vm = "sfo-m01-en01"
+    type = "high"
+  },
+  startup6 = {
+    vm = "sfo-m01-en02"
+    type = "high"
+  }
+}

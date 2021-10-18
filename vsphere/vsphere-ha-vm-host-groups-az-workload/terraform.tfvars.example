@@ -1,0 +1,47 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-w01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Objects
+
+vsphere_datacenter = "sfo-w01-dc01"
+vsphere_cluster    = "sfo-w01-cl01"
+
+# Host Groups
+
+host_group_name_az_1 = "host-group-w01-cl01-az-1"
+host_group_hosts_az_1 = [
+  "sfo01-w01-esx01.rainpole.io",
+  "sfo01-w01-esx02.rainpole.io",
+  "sfo01-w01-esx03.rainpole.io",
+  "sfo01-w01-esx04.rainpole.io"
+]
+
+host_group_name_az_2 = "host-group-w01-cl01-az-2"
+host_group_hosts_az_2 = [
+  "sfo02-w01-esx01.rainpole.io",
+  "sfo02-w01-esx02.rainpole.io",
+  "sfo02-w01-esx03.rainpole.io",
+  "sfo02-w01-esx04.rainpole.io"
+]
+
+# VM Group
+
+vm_group_name = "vm-group-w01-cl01-az"
+vm_group_vms = [
+  "sfo-w01-en01",
+  "sfo-w01-en02"
+]
+
+# VM/Host Group Dependency Rule
+
+vm_host_group_ruleset_enable    = true
+vm_host_group_ruleset_mandatory = false
+vm_host_group_ruleset_name      = "vm-host-group-w01-cl01-az-preferred"

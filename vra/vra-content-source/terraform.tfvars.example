@@ -1,0 +1,20 @@
+##################################################################################
+# ENDPOINT
+##################################################################################
+
+vra_url       = "https://xint-vra01.rainpole.io"
+vra_api_token = "**********************************************"
+vra_insecure  = false
+
+##################################################################################
+# CATALOG SOURCES
+// Note: UI is 'content source' but provider is 'catalog source'.
+##################################################################################
+
+catalog_sources = {
+  catalog_source0 = {
+    name         = "Sample - Cloud Templates"
+    description  = "Sample - Cloud Templates"
+    project_name = "Sample"
+  }
+}

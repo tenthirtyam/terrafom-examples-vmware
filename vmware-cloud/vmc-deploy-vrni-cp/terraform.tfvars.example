@@ -1,0 +1,39 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Settings
+
+vsphere_server     = "sfo-m01-vc01.rainpole.io"
+vsphere_username   = "svc-terraform-vsphere@rainpole.io"
+vsphere_password   = "***************"
+vsphere_insecure   = false
+vsphere_host       = "sfo-m01-esx01.rainpole.io"
+vsphere_datacenter = "sfo-m01-dc01"
+vsphere_folder     = "sfo-m01-fd-vmc"
+vsphere_cluster    = "sfo-m01-cl01"
+vsphere_datastore  = "sfo-m01-cl01-ds-vsan01"
+vsphere_network    = "sfo-m01-seg01"
+
+# Cloud Proxy Settings
+
+cloud_proxy_ovf_remote                = "https://s3-us-west-2.amazonaws.com/vrni-packages-archive-symphony/latest/VMWare-Network-Insight-Collector.ova"
+cloud_proxy_ovf_local                 = null
+cloud_proxy_deployment_option         = "medium"
+cloud_proxy_otk                       = "*****************************"
+cloud_proxy_support_password          = "************"
+cloud_proxy_console_password          = "************"
+cloud_proxy_name                      = "sfo-w01-vmc-vrni01"
+cloud_proxy_network_proxy_hostname_ip = ""
+cloud_proxy_network_proxy_port        = ""
+cloud_proxy_network_proxy_username    = ""
+cloud_proxy_network_proxy_password    = ""
+cloud_proxy_network_proxy_auth_type   = ""
+cloud_proxy_ceip_enabled              = "True"
+cloud_proxy_ip_address                = "192.168.31.141"
+cloud_proxy_netmask                   = "255.255.255.0"
+cloud_proxy_gateway                   = "192.168.31.1"
+cloud_proxy_dns_servers               = "172.16.11.4,172.16.11.5"
+cloud_proxy_ntp_servers               = "172.16.11.4,172.16.11.5"
+cloud_proxy_dns_search                = "rainpole.io"
+cloud_proxy_disk_provisioning         = "thin"

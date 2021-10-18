@@ -1,0 +1,28 @@
+##################################################################################
+# ENDPOINT
+##################################################################################
+
+vra_url       = "https://xint-vra01.rainpole.io"
+vra_api_token = "**********************************************"
+vra_insecure  = false
+
+##################################################################################
+# STORAGE PROFILES
+##################################################################################
+
+storage_profile_vsphere = {
+  profile0 = {
+    cloud_account_name   = "sfo-w01-vc01"
+    cloud_account_region = "Datacenter:datacenter-3"
+    name                 = "standard-sfo-w01-cl01-vsan-default"
+    description          = "standard-sfo-w01-cl01-vsan-default"
+    datastore            = "sfo-w01-cl01-ds-vsan01"
+    disk_type            = "standard"
+    default_item         = true
+    // Set if this profile should be used as the default for this region.
+    provisioning_type = "thin"
+    // Supported Values: "thin", "thick", and "eagerZeroedThick"
+    storage_policy = "sfo-w01-cl01 vSAN Storage Policy"
+    tag_tier       = "platinum"
+  }
+}

@@ -1,0 +1,24 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-m01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Objects
+
+vsphere_datacenter = "sfo-m01-dc01"
+vsphere_cluster    = "sfo-m01-cl01"
+
+# Anti-Affinity Rules
+
+ruleset_name_0 = "sfo-m01-anti-affinity-rule-vra"
+ruleset_vms_0 = [
+  "xint-vra01a",
+  "xint-vra01b",
+  "xint-vra01c"
+]

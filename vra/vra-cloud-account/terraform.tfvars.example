@@ -1,0 +1,40 @@
+##################################################################################
+# ENDPOINT
+##################################################################################
+
+vra_url       = "https://xint-vra01.rainpole.io"
+vra_api_token = "**********************************************"
+vra_insecure  = false
+
+##################################################################################
+# CLOUD ACCOUNTS and CLOUD ZONES
+##################################################################################
+
+cloud_accounts_vsphere = {
+  account0 = {
+    name        = "sfo-w01-vc01"
+    description = "US-West-1 / Workload Domain 01"
+    hostname    = "sfo-w01-vc01.sfo.rainpole.io"
+    username    = "svc-vra-vsphere@sfo.rainpole.io"
+    password    = "**********"
+    region      = "Datacenter:datacenter-3"
+    tag_cloud   = "private"
+    tag_region  = "us-west-1"
+    association = [
+      "sfo-w01-nsx01",
+    ]
+  }
+}
+
+cloud_accounts_nsx = {
+  account0 = {
+    name        = "sfo-w01-nsx01"
+    description = "US-West-1 / Workload Domain 01"
+    hostname    = "sfo-w01-nsx01.sfo.rainpole.io"
+    username    = "svc-vra-nsx@sfo.rainpole.io"
+    password    = "********************"
+    tag_cloud   = "private"
+  }
+}
+
+accept_self_signed = true

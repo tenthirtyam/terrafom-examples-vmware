@@ -1,0 +1,38 @@
+##################################################################################
+# ENDPOINT
+##################################################################################
+
+vra_url       = "https://xint-vra01.rainpole.io"
+vra_api_token = "*******************************"
+vra_insecure  = false
+
+##################################################################################
+# NETWORK PROFILE - EXISTING
+##################################################################################
+
+# Network Profiles
+
+cloud_account_nsxt    = "sfo-w01-nsx01"
+cloud_account_vsphere = "sfo-w01-vc01"
+region                = "Datacenter:datacenter-3"
+name                  = "net-existing-sfo-w01-vc01-01"
+description           = "Existing Networks - Workload Domain 01"
+isolation_type        = "NONE"
+network_ip_ranges = {
+  ip_range0 = {
+    subnet_name          = "sfo-prod-172-11-10-0-24"
+    ip_range_name        = "172-11-10-0-24"
+    ip_range_description = "Production: Network Static IP Range"
+    start_ip_address     = "172.11.10.10"
+    end_ip_address       = "172.11.10.254"
+    ip_version           = "IPv4"
+  }
+  ip_range1 = {
+    subnet_name          = "sfo-dev-172-12-10-0-24"
+    ip_range_name        = "172-12-10-0-24"
+    ip_range_description = "Development: Network Static IP Range"
+    start_ip_address     = "172.12.10.10"
+    end_ip_address       = "172.12.10.254"
+    ip_version           = "IPv4"
+  }
+}

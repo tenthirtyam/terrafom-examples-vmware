@@ -1,0 +1,43 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-m01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Settings
+
+vsphere_datacenter = "sfo-m01-dc01"
+
+# Folders
+
+vsphere_folders = {
+  folder0 = {
+    path = "sfo-w01-fd-edge"
+    type = "vm"
+  },
+  folder1 = {
+    path = "sfo-w01-fd-workloads"
+    type = "vm"
+  },
+  folder2 = {
+    path = "sfo-w01-fd-lcm"
+    type = "datastore"
+  },
+  folder3 = {
+    path = "sfo-w01-fd-local"
+    type = "datastore"
+  },
+  folder4 = {
+    path = "sfo-w01-fd-vsan"
+    type = "datastore"
+  },
+  folder5 = {
+    path = "sfo-w01-fd-nfs"
+    type = "datastore"
+  }
+}

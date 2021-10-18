@@ -1,0 +1,27 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-m01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Objects
+
+vsphere_datacenter = "sfo-m01-dc01"
+vsphere_cluster    = "sfo-m01-cl01"
+
+# VM-VM Rules
+
+vm_vm_dependency_rule_name_0 = "vm-vm-rule-wsa-vra"
+
+dependency_vm_group_name_0 = "xint-vm-group-wsa"   // Cross-instance Workspace ONE Access Virtual Machine Dependency Group Name
+vm_group_name_0 = "xint-vm-group-vra"              // vRealize Automation Virtual Machine Group Name
+vm_group_vms_0 = [
+  "xint-vra01a",
+  "xint-vra01b",
+  "xint-vra01c"
+]                                                  // vRealize Automation Group Virtual Machines

@@ -1,0 +1,37 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-w01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Settings
+
+vsphere_datacenter = "sfo-w01-dc01"
+
+# vSphere (with Tanzu) Tag
+
+tanzu_vsan_datastore           = "sfo-w01-cl01-ds-vsan01"
+tanzu_tag_category_name        = "vsphere-with-tanzu"
+tanzu_tag_catagory_description = "vsphere-with-tanzu"
+tanzu_tag_catagory_cardinality = "single"
+tanzu_tag_catagory_types = [
+  "Datastore",
+]
+tanzu_tag_name        = "vsphere-with-tanzu"
+tanzu_tag_description = "vsphere-with-tanzu"
+
+# vSphere (with Tanzu) Datastores
+
+tanzu_datastores = [
+  "sfo-w01-cl01-ds-vsan01",
+]
+
+# vSphere (with Tanzu) Storage Policy
+
+tanzu_storage_policy_name        = "vsphere-with-tanzu"
+tanzu_storage_policy_description = "vSphere with Tanzu Storage Policy"

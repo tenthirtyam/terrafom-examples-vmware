@@ -1,0 +1,21 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-w01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# vSphere Settings
+
+vsphere_datacenter = "sfo-w01-dc01"
+vsphere_datastore  = "sfo-w01-cl01-ds-vsan01"
+
+# Content Library Settings
+
+vsphere_content_library_name        = "sfo-w01-lib01"
+vsphere_content_library_description = "Publishing Content Library for sfo-w01."
+vsphere_content_library_auth        = "NONE"
