@@ -1,0 +1,27 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-w01-vc01.rainpole.io"
+vsphere_username = "svc-terraform-vsphere@rainpole.io"
+vsphere_password = "************"
+vsphere_insecure = false
+
+# Content Library Settings
+
+content_library_item_repo = "https://images.rainpole.io/download"
+content_library_name = "sfo-w01-lib01"
+content_library_item = {
+  item0 = {
+    name        = "linux-ubuntu-server-lts"
+    description = "Ubuntu Server LTS"
+    file_url    = "linux-ubuntu-server-lts"
+  },
+  item1 = {
+    name        = "windows-server-standard"
+    description = "Microsoft Windows Server Standard"
+    file_url    = "windows-server-standard"
+  }
+}
