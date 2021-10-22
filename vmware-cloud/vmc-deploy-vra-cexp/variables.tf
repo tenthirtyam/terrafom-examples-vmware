@@ -80,6 +80,18 @@ variable "cloud_proxy_root_password" {
   description = "The password for the root user account."
   sensitive   = true
 }
+variable "cloud_proxy_root_password_mindays" {
+  type        = number
+  description = "The minimum days for the root user account password."
+}
+variable "cloud_proxy_root_password_maxdays" {
+  type        = number
+  description = "The maximum days for the root user account password."
+}
+variable "cloud_proxy_root_password_warndays" {
+  type        = number
+  description = "The number of days to warn on the root user account password expiration."
+}
 variable "cloud_proxy_name" {
   type        = string
   description = "The name for the virtual appliance in the vSphere inventory."

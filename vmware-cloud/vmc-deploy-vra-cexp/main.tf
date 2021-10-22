@@ -104,6 +104,23 @@ resource "vsphere_virtual_machine" "cloud_proxy" {
   }
 }
 
+resource "null_resource" "cloud_proxy_init" {
+
+  provisioner "remote-exec" {
+    inline = [
+      "chage --mindays ${var.cloud_proxy_root_password_mindays} --maxdays ${var.cloud_proxy_root_password_maxdays} --warndays ${var.cloud_proxy_root_password_warndays} root",
+    ]
+    connection {
+      type     = "ssh"
+      host     = vsphere_virtual_machine.cloud_proxy.vapp[0].properties.ip0
+      user     = "root"
+      password = var.cloud_proxy_root_password
+      port     = "22"
+      agent    = false
+    }
+  }
+}
+
 ##################################################################################
 # OUTPUTS
 ##################################################################################
