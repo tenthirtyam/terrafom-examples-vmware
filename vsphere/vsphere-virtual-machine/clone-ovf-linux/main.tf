@@ -52,8 +52,9 @@ resource "vsphere_virtual_machine" "vm" {
     network_id = data.vsphere_network.network.id
   }
   disk {
-    label = "disk0"
-    size  = var.vm_disk_size
+    label            = "disk0"
+    size             = var.vm_disk_size
+    thin_provisioned = true
   }
   clone {
     template_uuid = data.vsphere_content_library_item.content_library_item.id
