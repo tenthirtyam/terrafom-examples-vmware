@@ -30,7 +30,7 @@ data "vsphere_datastore" "datastore" {
 }
 
 data "vsphere_folder" "folder" {
-  path = "/${data.vsphere_datacenter.datacenter.name}/vm/${data.vsphere_folder}"
+  path = "/${data.vsphere_datacenter.datacenter.name}/vm/${var.vsphere_folder}"
 }
 
 data "vsphere_virtual_machine" "template" {
