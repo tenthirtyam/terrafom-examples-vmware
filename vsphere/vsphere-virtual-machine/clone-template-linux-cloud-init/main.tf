@@ -56,6 +56,11 @@ resource "vsphere_virtual_machine" "vm" {
   clone {
     template_uuid = data.vsphere_virtual_machine.template.id
   }
+  lifecycle {
+    ignore_changes = [
+      clone[0].template_uuid,
+    ]
+  }
   extra_config = {
   "guestinfo.metadata"          = base64encode(file("${path.module}/metadata.yml"))
   "guestinfo.metadata.encoding" = "base64"

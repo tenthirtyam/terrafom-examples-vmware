@@ -70,4 +70,9 @@ resource "vsphere_virtual_machine" "vm" {
       dns_server_list = var.vm_dns_server_list
     }
   }
+  lifecycle {
+    ignore_changes = [
+      clone[0].template_uuid,
+    ]
+  }
 }

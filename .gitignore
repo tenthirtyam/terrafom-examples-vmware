@@ -1,3 +1,7 @@
+# MacOS
+## Ignore desktop services files.
+**/.DS_Store
+
 # Local .terraform directories
 **/.terraform/*
 
