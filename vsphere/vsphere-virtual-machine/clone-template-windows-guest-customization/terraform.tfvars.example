@@ -35,4 +35,4 @@ vm_dns_server_list         = ["172.16.11.4", "172.16.11.5"]
 domain                     = "rainpole.io"
 domain_admin_user          = "administrator@rainpole.io"
 domain_admin_password      = "VMware1!"
-admin_password             = "VMware1!"
+vm_admin_password             = "VMware1!"
