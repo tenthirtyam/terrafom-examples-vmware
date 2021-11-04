@@ -54,11 +54,11 @@ variable "vm_name" {
 }
 
 variable "vm_cpus" {
-  type = int
+  type = number
 }
 
 variable "vm_memory" {
-  type = int
+  type = number
 }
 
 variable "vm_firmware" {
