@@ -31,6 +31,7 @@ Examples are provided for the following:
 - vSphere dvPortGroup for NFS Storage
 - vSphere NFS Datastore
 - vSphere Storage Policy for Tanzu
+- vSphere Virtual Machine (Various Examples)
 
 **VMware NSX-T Data Center**
 - NSX Segments for Existing Networks in vRealize Automation
