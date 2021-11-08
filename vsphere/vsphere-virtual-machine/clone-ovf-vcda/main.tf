@@ -37,21 +37,6 @@ data "vsphere_host" "host" {
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
-data "vsphere_ovf_vm_template" "ovf" {
-  name             = var.vcda_hostname
-  resource_pool_id = data.vsphere_resource_pool.default.id
-  datastore_id     = data.vsphere_datastore.datastore.id
-  host_system_id   = data.vsphere_host.host.id
-  local_ovf_path   = var.vcda_local_ovf_path
-  ovf_network_map = {
-    "Network 1" : data.vsphere_network.network.id
-  }
-}
-
-##################################################################################
-# RESOURCES
-##################################################################################
-
 data "vsphere_ovf_vm_template" "vcda_onprem" {
   name             = var.vcda_hostname
   resource_pool_id = data.vsphere_resource_pool.default.id
@@ -62,6 +47,10 @@ data "vsphere_ovf_vm_template" "vcda_onprem" {
     "VM Network" : data.vsphere_network.network.id
   }
 }
+
+##################################################################################
+# RESOURCES
+##################################################################################
 
 resource "vsphere_virtual_machine" "vcda_onprem" {
   name                 = var.vcda_name
