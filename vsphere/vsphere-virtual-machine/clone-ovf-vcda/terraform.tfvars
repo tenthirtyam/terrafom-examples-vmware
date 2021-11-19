@@ -19,7 +19,7 @@ vsphere_network    = "DHCP"
 
 vcda_local_ovf_path    = "/Users/johnsonryan/Downloads/VMware-Cloud-Director-Availability-On-Premises-4.2.1.2610807-98aa4437ed_OVF10.ova"
 vcda_disk_provisioning = "thin"
-vcda_root_password     = "VMw@re123"
+vcda_root_password     = "VMw@re123!"
 vcda_name              = "vcda-terraform"
 vcda_hostname          = "vcda-terraform"
 vcda_ssh_enabled       = "True"
