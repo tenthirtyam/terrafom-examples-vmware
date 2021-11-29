@@ -70,21 +70,12 @@ resource "vsphere_virtual_machine" "infoblox" {
   memory               = data.vsphere_ovf_vm_template.ovfLocal.memory
   guest_id             = data.vsphere_ovf_vm_template.ovfLocal.guest_id
   scsi_type            = data.vsphere_ovf_vm_template.ovfLocal.scsi_type
-  network_interface {
-    network_id   = data.vsphere_network.network.id
-    adapter_type = "vmxnet3"
-  }
-  network_interface {
-    network_id   = data.vsphere_network.network.id
-    adapter_type = "vmxnet3"
-  }
-  network_interface {
-    network_id   = data.vsphere_network.network.id
-    adapter_type = "vmxnet3"
-  }
-  network_interface {
-    network_id   = data.vsphere_network.network.id
-    adapter_type = "vmxnet3"
+  
+  dynamic "network_interface" {
+    for_each = data.vsphere_ovf_vm_template.ovf.ovf_network_map
+    content {
+      network_id = network_interface.value
+    }
   }
 
   wait_for_guest_net_timeout = 0
