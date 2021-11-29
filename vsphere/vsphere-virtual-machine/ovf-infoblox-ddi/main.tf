@@ -94,6 +94,7 @@ resource "vsphere_virtual_machine" "infoblox" {
     local_ovf_path    = data.vsphere_ovf_vm_template.ovfLocal.local_ovf_path
     disk_provisioning = data.vsphere_ovf_vm_template.ovfLocal.disk_provisioning
     ovf_network_map   = data.vsphere_ovf_vm_template.ovfLocal.ovf_network_map
+    deployment_option = var.infoblox_deployment_option
   }
 
   vapp {
