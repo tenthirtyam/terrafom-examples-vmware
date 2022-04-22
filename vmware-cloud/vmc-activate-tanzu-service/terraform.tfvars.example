@@ -1,0 +1,10 @@
+
+debug           = false
+refresh_token   = "FILL_ME_IN"
+org_id          = "FILL_ME_IN"
+sddc_id         = "FILL_ME_IN"
+cluster_name    = "Cluster-1"
+ingress_cidr    = "10.10.0.0/23"
+egress_cidr     = "10.10.2.0/23"
+service_cidr    = "10.96.0.0/24"
+namespace_cidr  = "10.10.4.0/23"

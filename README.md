@@ -13,6 +13,7 @@ Examples are provided for the following:
 - Cloud Proxy for vRealize Network Insight Cloud
 - Cloud Proxy for vRealize Automation Cloud
 - Cloud Extensibility Proxy for vRealize Automation Cloud
+- Activate Tanzu services on VMware Cloud on AWS
 
 **VMware vSphere**
 - vSphere Content Library
