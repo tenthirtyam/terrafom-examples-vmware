@@ -1,0 +1,23 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+vcd_url  = "https://HOSTNAME/api"
+org      = "org-name"
+vdc      = "vdc-name"
+username = "org-user-name"
+password = "MY-SECRET-PASSWORD"
+vcd_insecure = false
+
+# VCD Settings
+catalog_name        = "image-catalog"
+template_name       = "Ubuntu-22.04-Server-20220506" # Ubuntu 21.10+ work wells with Cloud Init
+direct_network_name = "existing-direct-network"
+
+# Guest VM settings
+guest_hostname       = "guest-hostname"
+guest-ssh-public-key = "public-ssh-key for 'ubuntu' user login"
+
+# shebang in the first line is a must so that the script is recognized by CloudInit
+setup-script-name = "setup-script.sh"
