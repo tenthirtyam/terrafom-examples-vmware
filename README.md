@@ -56,6 +56,9 @@ Examples are provided for the following:
 - Content Source
 - Content Item
 
+**VMware Cloud Director**
+- VCD Virtual Machine
+
 ## Getting Started
 
 If you'd like to automate the creation of the custom vSphere role, a Terraform example is included in the project.
