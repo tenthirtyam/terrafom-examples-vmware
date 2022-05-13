@@ -8,6 +8,7 @@ org      = "org-name"
 vdc      = "vdc-name"
 username = "org-user-name"
 password = "MY-SECRET-PASSWORD"
+vcd_insecure = false
 
 # VCD Settings
 catalog_name        = "image-catalog"

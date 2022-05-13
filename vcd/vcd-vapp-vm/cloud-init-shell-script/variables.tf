@@ -8,6 +8,12 @@ variable "vcd_url" {
   type        = string
 }
 
+variable "vcd_insecure" {
+  description = "Allow unverified SSL"
+  type        = bool
+  default     = false
+}
+
 variable "org" {
   type = string
 }

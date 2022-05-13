@@ -5,7 +5,7 @@ provider "vcd" {
   url                  = var.vcd_url
   org                  = var.org
   vdc                  = var.vdc
-  allow_unverified_ssl = "true"
+  allow_unverified_ssl = var.vcd_insecure
 }
 
 resource "vcd_vapp" "terminal" {
