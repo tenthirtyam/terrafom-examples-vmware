@@ -52,6 +52,7 @@ resource "vsphere_virtual_machine" "vm" {
     size             = data.vsphere_virtual_machine.template.disks.0.size
     eagerly_scrub    = data.vsphere_virtual_machine.template.disks.0.eagerly_scrub
     thin_provisioned = data.vsphere_virtual_machine.template.disks.0.thin_provisioned
+    datastore_id     = data.vsphere_datastore.datastore.id
   }
   clone {
     template_uuid = data.vsphere_virtual_machine.template.id
