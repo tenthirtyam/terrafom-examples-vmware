@@ -1,0 +1,14 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server   = "sfo-m01-vc01.sfo.rainpole.io"
+vsphere_username = "administrator@vsphere.local"
+vsphere_password = "********************"
+
+# vSphere Objects
+
+vsphere_datacenter = "sfo-m01-dc01"
+vsphere_folder = "sfo-m01-fd-cbo"

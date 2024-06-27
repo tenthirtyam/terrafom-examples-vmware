@@ -1,0 +1,23 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "********************"
+aria_automation_insecure  = false
+
+##################################################################################
+# IMAGE MAPPINGS
+##################################################################################
+
+cloud_account_vsphere = "sfo-w01-vc01"
+image_mappings = {
+  image0 = {
+    name       = "photon-4.0"
+    image_name = "sfo-cba-lib01 / photon-4.0" // Format = "publisher_content_library_name / machine_image_name"
+  }
+  image1 = {
+    name       = "photon-4.0-uefi"
+    image_name = "sfo-cba-lib01 / photon-4.0-uefi" // Format = "publisher_content_library_name / machine_image_name"
+  }
+}

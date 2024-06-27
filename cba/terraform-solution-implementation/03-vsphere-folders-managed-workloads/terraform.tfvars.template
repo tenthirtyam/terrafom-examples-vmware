@@ -1,0 +1,33 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server   = "<!--REPLACE WITH WORKLOAD VCENTER FQDN-->"
+vsphere_username = "<!--REPLACE WITH SSO USERNAME-->"
+vsphere_password = "<!--REPLACE WITH SSO PASSWORD-->"
+
+# vSphere Settings
+
+vsphere_datacenter = "<!--REPLACE WITH WORKLOAD DATACENTER-->"
+vsphere_cluster    = "<!--REPLACE WITH WORKLOAD CLUSTER-->"
+vsphere_folders = {
+  folder0 = {
+    path = "<!--REPLACE WITH WORKLOAD FOLDER-->"
+    type = "vm"
+  },
+  folder1 = {
+    path = "<!--REPLACE WITH WORKLOAD STORAGE LOCAL FOLDER-->"
+    type = "datastore"
+  },
+  folder2 = {
+    path = "<!--REPLACE WITH WORKLOAD STORAGE READ ONLY FOLDER-->"
+    type = "datastore"
+  }
+}
+vsphere_resource_pools = {
+  resource_pool0 = {
+    name = "<!--REPLACE WITH WORKLOAD RESOURCE POOL-->"
+  }
+}

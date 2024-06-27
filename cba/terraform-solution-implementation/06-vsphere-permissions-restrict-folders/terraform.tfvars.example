@@ -1,0 +1,19 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server   = "sfo-w01-vc01.sfo.rainpole.io"
+vsphere_username = "administrator@vsphere.local"
+vsphere_password = "VMw@re1!"
+
+# vSphere Objects
+
+vsphere_datacenter      = "sfo-w01-dc01"
+role_name               = "No access"
+assembler_service_account  = "SFO\\svc-vaa-vsphere"
+orchestrator_service_account = "SFO\\svc-vao-vsphere"
+edge_folder             = "sfo-w01-fd-edge"
+local_storage_folder    = "sfo-w01-fd-storage-local"
+readonly_storage_folder = "sfo-w01-fd-storage-readonly"

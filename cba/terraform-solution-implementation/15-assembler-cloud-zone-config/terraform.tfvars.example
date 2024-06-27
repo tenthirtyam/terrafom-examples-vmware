@@ -1,0 +1,12 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "*****************"
+aria_automation_insecure  = false
+
+cloud_zone_name        = "sfo-w01-vc01"
+workload_target_folder = "sfo-w01-fd-workload"
+fabric_compute_name    = "sfo-w01-cl01 / sfo-w01-cl01-rp-workload"
+tag_value              = "true"

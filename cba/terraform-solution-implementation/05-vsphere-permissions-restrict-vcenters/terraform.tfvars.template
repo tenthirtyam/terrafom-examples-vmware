@@ -1,0 +1,15 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server   = "<!--REPLACE WITH MANAGEMENT VCENTER FQDN-->"
+vsphere_username = "<!--REPLACE WITH SSO USERNAME-->"
+vsphere_password = "<!--REPLACE WITH SSO PASSWORD-->"
+
+# vSphere Permissions
+
+role_name                       = "No access"
+assembler_service_account       = "<!--REPLACE WITH ARIA AUTOMATION ASSEMBLER SERVICE ACCOUNT-->"
+orchestrator_service_account    = "<!--REPLACE WITH ARIA AUTOMATION ORCHESTRATOR SERVICE ACCOUNT-->"

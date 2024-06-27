@@ -1,0 +1,36 @@
+##################################################################################
+# VARIABLES
+##################################################################################                                                 	                     
+
+# Aria Automation Assembler Endpoint
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "********************"
+aria_automation_insecure  = false
+
+# vCenter Server Endpoint
+
+vsphere_server   = "sfo-w01-vc01.sfo.rainpole.io"
+vsphere_username = "administrator@vsphere.local"
+vsphere_password = "VMw@re1!"
+vsphere_insecure = false
+
+# vSphere Objects
+
+vsphere_datacenter = "sfo-w01-dc01"
+vsphere_cluster    = "sfo-w01-cl01"
+
+# Storage Profile
+
+storage_profile_vsphere = {
+  profile0 = {
+    cloud_account_name = "sfo-w01-vc01"
+    name               = "standard-sfo-w01-cl01-vsan-default"
+    datastore          = "sfo-w01-sfo-w01-vc01-sfo-w01-cl01-vsan01"
+    disk_type          = "standard"
+    default_item       = true   // Set if this profile should be used as the default for this region.
+    provisioning_type  = "thin" // Supported Values: "thin", "thick", and "eagerZeroedThick"
+    storage_policy     = "sfo-w01-cl01 vSAN Storage Policy"
+    tag_tier           = "platinum"
+  }
+}

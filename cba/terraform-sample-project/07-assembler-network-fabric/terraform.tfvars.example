@@ -1,0 +1,21 @@
+##################################################################################
+# VARIABLES
+##################################################################################                                                 	                     
+
+# Endpoints
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "********************"
+aria_automation_insecure  = false
+
+# Fabric Networks
+
+cidr_network0            = "192.168.50.0/24"
+default_gateway_network0 = "192.168.50.1"
+
+cidr_network1            = "192.168.51.0/24"
+default_gateway_network1 = "192.168.51.1"
+
+domain               = "sfo.rainpole.io"
+dns_search_domains   = ["sfo.rainpole.io"]
+dns_server_addresses = ["172.18.95.4", "172.18.95.5"]

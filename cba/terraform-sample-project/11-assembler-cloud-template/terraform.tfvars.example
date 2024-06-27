@@ -1,0 +1,109 @@
+##################################################################################
+# VARIABLES
+##################################################################################                                                 	                     
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "********************"
+aria_automation_insecure  = false
+
+#################################################################################
+# CLOUD TEMPLATES (f.k.a. "BLUEPRINTS")
+// NOTE: Must use '$$' for escape when using expressions.
+##################################################################################
+
+cloud_templates = {
+  cloud_template0 = {
+    name         = "Photon 4.0"
+    description  = "Default Photon 4.0 OS"
+    project_name = "Rainpole"
+    content      = <<-EOT
+name: Photon 4.0
+formatVersion: 1
+inputs:
+  targetCloud:
+    type: string
+    oneOf:
+      - title: VMware Cloud Foundation
+        const: cloud:sfo-w01
+    title: Cloud
+    description: Select a target cloud.
+  targetRegion:
+    type: string
+    oneOf:
+      - title: sfo-w01-vc01
+        const: region:sfo-w01
+    title: Region
+    description: Select a target region.
+  targetEnvironment:
+    type: string
+    oneOf:
+      - title: Production
+        const: network:prod
+      - title: Development
+        const: network:dev
+    title: Environment
+    description: Select a target environment.
+  performanceTier:
+    type: string
+    oneOf:
+      - title: Platinum
+        const: storage:platinum
+    title: Performance Tier
+    description: Select a performance tier.
+  operatingSystem:
+    type: string
+    oneOf:
+      - title: Photon 4.0
+        const: photon-4.0
+      - title: photon 4.0 (UEFI)
+        const: photon-4.0-uefi
+    title: Operating System and Version
+    description: Select a operating system and version.
+  nodeSize:
+    type: string
+    oneOf:
+      - title: X-Small
+        const: x-small
+      - title: Small
+        const: small
+      - title: Medium
+        const: medium
+      - title: Large
+        const: large
+      - title: X-Large
+        const: x-large
+    title: Node Size
+  nodeCount:
+    type: integer
+    default: 1
+    maximum: 5
+    title: Node Count
+    description: Select the number of VMs between 1 and 5.
+resources:
+  Cloud_vSphere_Machine_1:
+    type: Cloud.vSphere.Machine
+    properties:
+      image: $${input.operatingSystem}
+      flavor: $${input.nodeSize}
+      count: $${input.nodeCount}
+      customizationSpec: photon-4.0
+      constraints:
+        - tag: $${input.targetCloud}
+        - tag: $${input.targetRegion}
+      networks:
+        - network: $${resource.Cloud_NSX_Network_1.id}
+          assignment: static
+      attachedDisks: []
+  Cloud_NSX_Network_1:
+    type: Cloud.NSX.Network
+    properties:
+      networkType: existing
+      constraints:
+        - tag: $${input.targetEnvironment}
+	EOT
+    release_changelog   = "Initial release"
+    release_description = "Default Photon 4.0 OS"
+    release_version     = "1.0.0"
+    release_status      = true
+  }
+}

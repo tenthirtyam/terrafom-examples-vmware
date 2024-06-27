@@ -1,0 +1,33 @@
+##################################################################################
+# VARIABLES
+##################################################################################                                                 	                     
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "********************"
+aria_automation_insecure  = false
+
+
+##################################################################################
+# PROJECT
+##################################################################################
+
+project_name                    = "Rainpole"
+project_description             = "Sample Project: Rainpole"
+project_operation_timeout       = 6000
+project_machine_naming_template = "$${project.name}-$${###}"
+project_zone_priority           = 1
+project_zone_max_instances      = 0
+project_zone_cpu_limit          = 0
+project_zone_memory_limit_mb    = 0
+project_zone_storage_limit_gb   = 0
+project_zones = {
+  project_zone0 = {
+    name = "sfo-w01-vc01"
+  }
+}
+project_administrator_roles = {
+  role0 = {
+    email = "user@vmware.com"
+    type  = "user"
+  }
+}

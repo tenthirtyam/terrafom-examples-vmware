@@ -1,0 +1,27 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "<!--REPLACE WITH MANAGEMENT VCENTER FQDN-->"
+vsphere_username = "<!--REPLACE WITH SSO USERNAME-->"
+vsphere_password = "<!--REPLACE WITH SSO PASSWORD-->"
+vsphere_insecure = false
+
+# vSphere Objects
+
+vsphere_datacenter = "<!--REPLACE WITH MANAGEMENT DATACENTER-->"
+vsphere_cluster    = "<!--REPLACE WITH MANAGEMENT CLUSTER-->"
+
+# VM to Host Rule
+
+vsphere_host_group = "<!--REPLACE WITH AZ1 HOST GROUP NAME-->"
+
+# VM Group
+
+cba_group_name = "<!--REPLACE WITH CLOUD BASED AUTOMATION VM GROUP NAME-->"
+cba_group_vms = [
+  "<!--REPLACE WITH CLOUD PROXY NAME-->",
+  "<!--REPLACE WITH CLOUD EXTENSIBILITY PROXY NAME-->"
+]

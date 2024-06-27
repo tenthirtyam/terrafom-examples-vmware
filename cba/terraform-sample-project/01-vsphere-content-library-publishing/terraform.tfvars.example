@@ -1,0 +1,18 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server                      = "sfo-w01-vc01.sfo.rainpole.io"
+vsphere_username                    = "administrator@vsphere.local"
+vsphere_password                    = "VMw@re1!"
+vsphere_insecure                    = false
+
+# vSphere Settings
+
+vsphere_datacenter                  = "sfo-w01-dc01"
+vsphere_datastore                   = "sfo-w01-sfo-w01-vc01-sfo-w01-cl01-vsan01"
+vsphere_content_library_name        = "sfo-cba-lib01"
+vsphere_content_library_description = "Publishing Content Library for Aria Automation"
+vsphere_content_library_auth        = "NONE"

@@ -1,0 +1,49 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# VMware Cloud Services
+
+csp_uri       = "https://console.cloud.vmware.com"
+aria_automation_uri       = "https://api.mgmt.cloud.vmware.com"
+csp_api_token = "<!--REPLACE WITH CSP TOKEN-->"
+
+# vSphere Settings
+
+vsphere_server     = "<!--REPLACE WITH MANAGEMENT VCENTER FQDN-->"
+vsphere_username   = "<!--REPLACE WITH SSO USERNAME-->"
+vsphere_password   = "<!--REPLACE WITH SSO PASSWORD-->"
+vsphere_insecure   = false
+vsphere_host       = "<!--REPLACE WITH ESXI HOST-->"
+vsphere_datacenter = "<!--REPLACE WITH MANAGEMENT DATACENTER-->"
+vsphere_folder     = "<!--REPLACE WITH CLOUD BASED AUTOMATION FOLDER-->"
+vsphere_cluster    = "<!--REPLACE WITH MANAGEMENT CLUSTER-->"
+vsphere_datastore  = "<!--REPLACE WITH MANAGEMENT DATASTORE-->"
+vsphere_network    = "<!--REPLACE WITH MANAGEMENT NETWORK-->"
+
+# Cloud Proxy Settings
+
+cloud_proxy_deployment_option         = "vra_cloud"
+cloud_proxy_hostname                  = "<!--REPLACE WITH CLOUD PROXY HOSTNAME-->"
+cloud_proxy_root_password             = "<!--REPLACE WITH CLOUD PROXY ROOT PASSWORD-->"
+cloud_proxy_root_password_mindays     = 0
+cloud_proxy_root_password_maxdays     = 90   // 90 days is the default value
+cloud_proxy_root_password_warndays    = 14
+cloud_proxy_name                      = "<!--REPLACE WITH CLOUD PROXY NAME-->"
+cloud_proxy_ssh_enabled               = "True"
+cloud_proxy_fips_mode                 = "disabled"
+cloud_proxy_network_proxy_hostname_ip = null
+cloud_proxy_network_proxy_port        = null
+cloud_proxy_network_proxy_username    = null
+cloud_proxy_network_proxy_password    = null
+cloud_proxy_ip_address                = "<!--REPLACE WITH CLOUD PROXY IP ADDRESS-->"
+cloud_proxy_netmask                   = "<!--REPLACE WITH CLOUD PROXY NETMASK-->"
+cloud_proxy_gateway                   = "<!--REPLACE WITH CLOUD PROXY GATEWAY-->"
+cloud_proxy_dns_servers               = "<!--REPLACE WITH CLOUD PROXY DNS SERVERS-->"
+cloud_proxy_ntp_servers               = "<!--REPLACE WITH CLOUD PROXY NTP SERVERS-->"
+cloud_proxy_domain                    = "<!--REPLACE WITH CLOUD PROXY DOMAIN-->"
+cloud_proxy_dns_search                = "<!--REPLACE WITH CLOUD PROXY DNS SEARCH-->"
+cloud_proxy_k8s_cluster_cidr          = "<!--REPLACE WITH K8S CLUSTER CIDR-->"
+cloud_proxy_k8s_service_cidr          = "<!--REPLACE WITH K8S SERVICE CIDR-->"
+vro_integration_name                  = "<!--REPLACE WITH VRO INTEGRATION NAME-->"
+vro_integration_tag                   = "<!--REPLACE WITH VRO INTEGRATION TAG-->"

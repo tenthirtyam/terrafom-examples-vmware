@@ -1,0 +1,22 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# VMware Cloud Foundation Credentials
+
+vcf_server   = "<!--REPLACE WITH SDDC MANAGER FQDN-->"
+vcf_username = "<!--REPLACE WITH SDDC MANAGER USERNAME-->"
+vcf_password = "<!--REPLACE WITH SDDC MANAGER PASSWORD-->"
+
+# Active Directory Details
+
+domain_fqdn          = "<!--REPLACE WITH DOMAIN FQDN-->"
+domain_bind_username = "<!--REPLACE WITH DOMAIN BIND USER-->"
+domain_bind_password = "<!--REPLACE WITH DOMAIN BIND PASSWORD-->"
+
+# vSphere Permissions
+
+assembler_vsphere_role  = "<!--REPLACE WITH ARIA AUTOMATION ASSEMBLER ROLE NAME-->"
+assembler_service_account  = "<!--REPLACE WITH ARIA AUTOMATION ASSEMBLER SERVICE ACCOUNT-->"
+orchestrator_vsphere_role = "<!--REPLACE WITH ARIA AUTOMATION ORCHESTRATOR ROLE NAME-->"
+orchestrator_service_account = "<!--REPLACE WITH ARIA AUTOMATION ORCHESTRATOR SERVICE ACCOUNT-->"

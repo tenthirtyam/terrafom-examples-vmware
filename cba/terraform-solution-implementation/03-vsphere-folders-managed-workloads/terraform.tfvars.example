@@ -1,0 +1,33 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server   = "sfo-w01-vc01.sfo.rainpole.io"
+vsphere_username = "administrator@vsphere.local"
+vsphere_password = "VMw@re1!"
+
+# vSphere Settings
+
+vsphere_datacenter = "sfo-w01-dc01"
+vsphere_cluster    = "sfo-w01-cl01"
+vsphere_folders = {
+  folder0 = {
+    path = "sfo-w01-fd-workload"
+    type = "vm"
+  },
+  folder1 = {
+    path = "sfo-w01-fd-storage-local"
+    type = "datastore"
+  },
+  folder2 = {
+    path = "sfo-w01-fd-storage-readonly"
+    type = "datastore"
+  }
+}
+vsphere_resource_pools = {
+  resource_pool0 = {
+    name = "sfo-w01-cl01-rp-workload"
+  }
+}

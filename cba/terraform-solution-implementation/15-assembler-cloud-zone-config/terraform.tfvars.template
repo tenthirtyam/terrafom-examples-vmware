@@ -1,0 +1,12 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "<!--REPLACE WITH CSP TOKEN-->"
+aria_automation_insecure  = false
+
+cloud_zone_name        = "<!--REPLACE WITH WORKLOAD VCENTER HOSTNAME-->"
+workload_target_folder = "<!--REPLACE WITH WORKLOAD FOLDER-->"
+fabric_compute_name    = "<!--REPLACE WITH ARIA AUTOMATION ASSEMBLER FABRIC NAME-->"
+tag_value              = "true"

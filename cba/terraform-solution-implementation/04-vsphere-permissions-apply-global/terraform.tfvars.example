@@ -1,0 +1,22 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# VMware Cloud Foundation Credentials
+
+vcf_server   = "sfo-vcf01.sfo.rainpole.io"
+vcf_username = "administrator@vsphere.local"
+vcf_password = "VMw@re1!"
+
+# Active Directory Details
+
+domain_fqdn          = "sfo.rainpole.io"
+domain_bind_username = "svc-vsphere-ad"
+domain_bind_password = "VMw@re1!"
+
+# vSphere Permissions
+
+assembler_vsphere_role  = "VMware Aria Automation Assembler to vSphere Integration"
+assembler_service_account  = "svc-vaa-vsphere"
+orchestrator_vsphere_role = "VMware Aria Automation Orchestrator to vSphere Integration"
+orchestrator_service_account = "svc-vao-vsphere"

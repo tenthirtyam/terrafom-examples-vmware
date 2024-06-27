@@ -1,0 +1,41 @@
+##################################################################################
+# VARIABLES
+##################################################################################                                                 	                     
+
+aria_automation_url         = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token  = "******************"
+aria_automation_insecure    = false
+
+# Cloud Accounts
+
+cloud_account_vsphere = "sfo-w01-vc01"
+
+# Flavour Mappings
+
+flavor_mappings = {
+  x-small = {
+    name      = "x-small"
+    cpu_count = "1"
+    memory    = "1024" // Memory in MB
+  }
+  small = {
+    name      = "small"
+    cpu_count = "2"
+    memory    = "2048" // Memory in MB
+  }
+  medium = {
+    name      = "medium"
+    cpu_count = "4"
+    memory    = "8192" // Memory in MB
+  }
+  large = {
+    name      = "large"
+    cpu_count = "8"
+    memory    = "16384" // Memory in MB
+  }
+  x-large = {
+    name      = "x-large"
+    cpu_count = "16"
+    memory    = "32768" // Memory in MB
+  }
+}

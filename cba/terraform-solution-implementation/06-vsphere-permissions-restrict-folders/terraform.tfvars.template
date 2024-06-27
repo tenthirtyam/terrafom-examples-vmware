@@ -1,0 +1,19 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server   = "<!--REPLACE WITH WORKLOAD VCENTER FQDN-->"
+vsphere_username = "<!--REPLACE WITH SSO USERNAME-->"
+vsphere_password = "<!--REPLACE WITH SSO PASSWORD-->"
+
+# vSphere Objects
+
+vsphere_datacenter      = "<!--REPLACE WITH WORKLOAD DATACENTER-->"
+role_name               = "No access"
+assembler_service_account  = "<!--REPLACE WITH ARIA AUTOMATION ASSEMBLER SERVICE ACCOUNT-->"
+orchestrator_service_account = "<!--REPLACE WITH ARIA AUTOMATION ORCHESTRATOR SERVICE ACCOUNT-->"
+edge_folder             = "<!--REPLACE WITH WORKLOAD EDGE FOLDER-->"
+local_storage_folder    = "<!--REPLACE WITH WORKLOAD STORAGE LOCAL FOLDER-->"
+readonly_storage_folder = "<!--REPLACE WITH WORKLOAD STORAGE READ ONLY FOLDER-->"

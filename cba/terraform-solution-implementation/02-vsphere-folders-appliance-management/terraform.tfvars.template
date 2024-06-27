@@ -1,0 +1,19 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server   = "<!--REPLACE WITH MANAGEMENT VCENTER FQDN-->"
+vsphere_username = "<!--REPLACE WITH SSO USERNAME-->"
+vsphere_password = "<!--REPLACE WITH SSO PASSWORD-->"
+
+# vSphere Settings
+
+vsphere_datacenter = "<!--REPLACE WITH MANAGEMENT DATACENTER-->"
+vsphere_folders = {
+  folder0 = {
+    path = "<!--REPLACE WITH CLOUD BASED AUTOMATION FOLDER-->"
+    type = "vm"
+  }
+}

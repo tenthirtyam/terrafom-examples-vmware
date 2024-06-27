@@ -1,0 +1,20 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# VMware Cloud Services
+
+csp_api_token = "<!--REPLACE WITH CSP TOKEN-->"
+cep_server    = "<!--REPLACE WITH CLOUD PROXY HOSTNAME-->"
+
+# VMware Cloud Foundation 
+
+vcf_server   = "<!--REPLACE WITH SDDC MANAGER FQDN-->"
+vcf_username = "<!--REPLACE WITH SSO USERNAME-->"
+vcf_password = "<!--REPLACE WITH SSO PASSWORD-->"
+vcf_domain   = "<!--REPLACE WITH WORKLOAD DOMAIN NAME-->"
+
+# Aria Orchestrator Service Account
+
+orchestrator_service_account  = "<!--REPLACE WITH ARIA AUTOMATION ORCHESTRATOR SERVICE ACCOUNT-->"
+orchestrator_password = "<!--REPLACE WITH ARIA AUTOMATION ORCHESTRATOR SERVICE ACCOUNT PASSWORD-->"

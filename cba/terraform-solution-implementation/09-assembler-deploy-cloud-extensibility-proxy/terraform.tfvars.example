@@ -1,0 +1,49 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# VMware Cloud Services
+
+csp_uri       = "https://console.cloud.vmware.com"
+aria_automation_uri       = "https://api.mgmt.cloud.vmware.com"
+csp_api_token = "********************"
+
+# vSphere Settings
+
+vsphere_server     = "sfo-m01-vc01.sfo.rainpole.io"
+vsphere_username   = "administrator@vsphere.local"
+vsphere_password   = "VMw@re1!"
+vsphere_insecure   = false
+vsphere_host       = "sfo01-m01-esx01.sfo.rainpole.io"
+vsphere_datacenter = "sfo-m01-dc01"
+vsphere_folder     = "sfo-m01-fd-cba"
+vsphere_cluster    = "sfo-m01-cl01"
+vsphere_datastore  = "sfo-m01-cl01-ds-vsan01"
+vsphere_network    = "sfo01-m01-cl01-vds01-pg-mgmt"
+
+# Cloud Proxy Settings
+
+cloud_proxy_deployment_option         = "vra_cloud"
+cloud_proxy_hostname                  = "sfo-cba-cep01.sfo.rainpole.io"
+cloud_proxy_root_password             = "VMw@re1!"
+cloud_proxy_root_password_mindays     = 0
+cloud_proxy_root_password_maxdays     = 90   // 90 days is the default value
+cloud_proxy_root_password_warndays    = 14
+cloud_proxy_name                      = "sfo-cba-cep01"
+cloud_proxy_ssh_enabled               = "True"
+cloud_proxy_fips_mode                 = "disabled"
+cloud_proxy_network_proxy_hostname_ip = null
+cloud_proxy_network_proxy_port        = null
+cloud_proxy_network_proxy_username    = null
+cloud_proxy_network_proxy_password    = null
+cloud_proxy_ip_address                = "172.16.11.52"
+cloud_proxy_netmask                   = "255.255.255.0"
+cloud_proxy_gateway                   = "172.16.11.253"
+cloud_proxy_dns_servers               = "172.16.11.4,172.16.11.5"
+cloud_proxy_ntp_servers               = "ntp.sfo.rainpole.io"
+cloud_proxy_domain                    = "sfo-cba-cep01.sfo.rainpole.io"
+cloud_proxy_dns_search                = "sfo.rainpole.io"
+cloud_proxy_k8s_cluster_cidr          = "10.244.0.0/22"
+cloud_proxy_k8s_service_cidr          = "10.244.4.0/22"
+vro_integration_name                  = "sfo-w01-orchestrator-integration"
+vro_integration_tag                   = "sfo-w01-orchestrator"

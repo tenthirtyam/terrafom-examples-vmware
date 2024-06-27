@@ -1,0 +1,20 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# VMware Cloud Foundation Credentials
+
+vcf_server   = "sfo-vcf01.sfo.rainpole.io"
+vcf_username = "administrator@vsphere.local"
+vcf_password = "********************"
+
+# Active Directory Details
+
+domain_fqdn          = "sfo.rainpole.io"
+domain_bind_username = "svc-vsphere-ad"
+domain_bind_password = "********************"
+
+# vSphere Permissions
+
+vsphere_role     = "Aria Operations (SaaS) to vSphere Integration"
+service_account  = "svc-cbo-vsphere"

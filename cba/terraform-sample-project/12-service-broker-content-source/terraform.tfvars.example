@@ -1,0 +1,19 @@
+##################################################################################
+# VARIABLES
+##################################################################################                                                 	                     
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "*******************"
+aria_automation_insecure  = false
+
+##################################################################################
+# CATALOG SOURCES
+##################################################################################
+
+catalog_sources = {
+  catalog_source0 = {
+    name         = "Rainpole - Cloud Templates"
+    description  = "VMware Cloud Templates for Project: Rainpole"
+    project_name = "Rainpole"
+  }
+}

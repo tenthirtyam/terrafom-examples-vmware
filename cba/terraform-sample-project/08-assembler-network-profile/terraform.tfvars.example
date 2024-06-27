@@ -1,0 +1,35 @@
+##################################################################################
+# VARIABLES
+##################################################################################                                                 	                     
+
+# Endpoints
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "********************"
+aria_automation_insecure  = false
+
+# Network Profiles
+
+cloud_account_nsxt    = "sfo-w01-nsx01"
+cloud_account_vsphere = "sfo-w01-vc01"
+name                  = "net-existing-sfo-w01-vc01"
+description           = "Existing Networks - sfo-w01"
+isolation_type        = "NONE"
+network_ip_ranges = {
+  ip_range0 = {
+    subnet_name          = "sfo-prod-192-168-50-0-24"
+    ip_range_name        = "192-168-50-0-24"
+    ip_range_description = "Production: Network Static IP Range"
+    start_ip_address     = "192.168.50.10"
+    end_ip_address       = "192.168.50.254"
+    ip_version           = "IPv4"
+  }
+  ip_range1 = {
+    subnet_name          = "sfo-dev-192-168-51-0-24"
+    ip_range_name        = "192-168-51-0-24"
+    ip_range_description = "Development: Network Static IP Range"
+    start_ip_address     = "192.168.51.10"
+    end_ip_address       = "192.168.51.254"
+    ip_version           = "IPv4"
+  }
+}

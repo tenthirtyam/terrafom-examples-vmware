@@ -1,0 +1,16 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# NSX Manager
+
+nsxt_instance = "sfo-m01-nsx01.sfo.rainpole.io"
+nsxt_username = "admin"
+nsxt_password = "********************"
+
+# Permissions
+
+vidm_user            = "svc-cbo-nsx@sfo.rainpole.io"
+vidm_type            = "remote_user"
+vidm_identity_source = "VIDM"
+nsxt_role            = "enterprise_admin"

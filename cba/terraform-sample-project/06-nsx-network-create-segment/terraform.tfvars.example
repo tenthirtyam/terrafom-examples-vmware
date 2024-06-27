@@ -1,0 +1,25 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Endpoints
+
+nsxt_instance = "sfo-w01-nsx01.sfo.rainpole.io"
+nsxt_username = "admin"
+nsxt_password = "VMw@re1!VMw@re1!"
+nsxt_insecure = false
+
+# NSX Segment
+
+nsxt_transport_zone = "overlay-tz-sfo-w01-nsx01.sfo.rainpole.io"
+nsxt_t1_gw          = "sfo-w01-ec01-t1-gw01"
+nsxt_segments = [
+  {
+    name = "sfo-prod-192-168-50-0-24"
+    cidr = "192.168.50.1/24"
+  },
+  {
+    name = "sfo-dev-192-168-51-0-24"
+    cidr = "192.168.51.1/24"
+  }
+]

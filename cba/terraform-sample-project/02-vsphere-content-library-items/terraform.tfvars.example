@@ -1,0 +1,26 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# vSphere Credentials
+
+vsphere_server          = "sfo-w01-vc01.sfo.rainpole.io"
+vsphere_username        = "administrator@vsphere.local"
+vsphere_password        = "VMw@re1!"
+vsphere_insecure        = false
+
+# Content Library Settings
+
+content_library_name    = "sfo-cba-lib01"
+content_library_items   = {
+  item0 = {
+    name                = "photon-4.0"
+    description         = "photon-4.0"
+    file_url            = "https://packages.vmware.com/photon/4.0/Rev2/ova/photon-ova-4.0-c001795b80.ova"
+  }
+  item1 = {
+    name                = "photon-4.0-uefi"
+    description         = "photon-4.0-uefi"
+    file_url            = "https://packages.vmware.com/photon/4.0/Rev2/ova/photon-ova_uefi-4.0-c001795b80.ova"
+  }
+}

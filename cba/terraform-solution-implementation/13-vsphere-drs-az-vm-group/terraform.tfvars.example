@@ -1,0 +1,27 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-m01-vc01.sfo.rainpole.io"
+vsphere_username = "administrator@vsphere.local"
+vsphere_password = "VMw@re1!"
+vsphere_insecure = false
+
+# vSphere Objects
+
+vsphere_datacenter = "sfo-m01-dc01"
+vsphere_cluster    = "sfo-m01-cl01"
+
+# VM to Host Rule
+
+vsphere_host_group = "sfo-m01-cl01_primary_az_hostgroup"
+
+# VM Group
+
+cba_group_name = "sfo-m01-vm-group-cba"
+cba_group_vms = [
+  "sfo-cba-cdp01",
+  "sfo-cba-cep01"
+]

@@ -1,0 +1,23 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+// VMware Cloud Services
+
+csp_api_token = "*********************"
+
+// Cloud Extensibility FQDN
+
+cep_server    = "sfo-cba-cep01.sfo.rainpole.io"
+
+// SDDC Manager 
+
+vcf_server   = "sfo-vcf01.sfo.rainpole.io"
+vcf_username = "administrator@vsphere.local"
+vcf_password = "VMw@re1!"
+vcf_domain   = "sfo-w01"
+
+// Aria Orchestrator Service Account
+
+orchestrator_service_account  = "svc-vao-vsphere"
+orchestrator_service_password = "VMw@re1!"

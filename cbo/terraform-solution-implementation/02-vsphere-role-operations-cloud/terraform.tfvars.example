@@ -1,0 +1,61 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+
+vsphere_server   = "sfo-m01-vc01.sfo.rainpole.io"
+vsphere_username = "administrator@vsphere.local"
+vsphere_password = "*******************************"
+vsphere_insecure = false
+
+# Role
+
+vsphere_role = "Aria Operations (SaaS) to vSphere Integration"
+vsphere_privileges = [
+"System.Anonymous",
+"System.Read",
+"System.View",
+"Datastore.AllocateSpace",
+"Datastore.Browse",
+"Extension.Register",
+"Extension.Unregister",
+"Extension.Update",
+"ExternalStatsProvider.Register",
+"ExternalStatsProvider.Unregister",
+"ExternalStatsProvider.Update",
+"Global.GlobalTag",
+"Global.Health",
+"Global.ManageCustomFields",
+"Global.SetCustomField",
+"Global.SystemTag",
+"Host.Inventory.EditCluster",
+"Performance.ModifyIntervals",
+"Resource.AssignVMToPool",
+"Resource.ColdMigrate",
+"Resource.HotMigrate",
+"StorageProfile.View",
+"StorageViews.View",
+"VirtualMachine.Config.CPUCount",
+"VirtualMachine.Config.Memory",
+"VirtualMachine.Config.Resource",
+"VirtualMachine.GuestOperations.Execute",
+"VirtualMachine.GuestOperations.Modify",
+"VirtualMachine.GuestOperations.ModifyAliases",
+"VirtualMachine.GuestOperations.Query",
+"VirtualMachine.GuestOperations.QueryAliases",
+"VirtualMachine.Interact.PowerOff",
+"VirtualMachine.Interact.PowerOn",
+"VirtualMachine.Interact.Reset",
+"VirtualMachine.Inventory.Delete",
+"VirtualMachine.Inventory.Move",
+"VirtualMachine.Namespace.Management",
+"VirtualMachine.Namespace.ModifyContent",
+"VirtualMachine.Namespace.Query",
+"VirtualMachine.Namespace.ReadContent",
+"VirtualMachine.State.CreateSnapshot",
+"VirtualMachine.State.RemoveSnapshot",
+"vStats.CollectAny",
+"vStats.QueryAny",
+"vStats.Settings" 
+]

@@ -1,0 +1,38 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+aria_automation_url       = "https://api.mgmt.cloud.vmware.com"
+aria_automation_api_token = "<!--REPLACE WITH CSP TOKEN-->"
+aria_automation_insecure  = false
+
+// Cloud Accounts
+
+cloud_accounts_vsphere = {
+  account0 = {
+    name        = "<!--REPLACE WITH WORKLOAD VCENTER HOSTNAME-->"
+    hostname    = "<!--REPLACE WITH WORKLOAD VCENTER FQDN-->"
+    username    = "<!--REPLACE WITH VSPHERE SERVICE ACCOUNT-->"
+    password    = "<!--REPLACE WITH VSPHERE SERVICE ACCOUNT PASSWORD-->"
+    region      = "<!--REPLACE WITH VSPHERE DATACENTER MOREF-->"
+    description = "<!--REPLACE WITH VSPHERE CLOUD ACCOUNT DESCRIPTION-->"
+    tag_region  = "<!--REPLACE WITH CLOUD ACCOUNT VCENTER TAG-->"
+    association = [
+      "<!--REPLACE WITH WORKLOAD NSX MANAGER ASSOCIATION-->",
+    ]
+  }
+}
+
+cloud_accounts_nsx = {
+  account0 = {
+    name        = "<!--REPLACE WITH WORKLOAD NSX MANAGER HOSTNAME-->"
+    hostname    = "<!--REPLACE WITH WORKLOAD NSX MANAGER FQDN-->"
+    username    = "<!--REPLACE WITH NSX SERVICE ACCOUNT-->"
+    password    = "<!--REPLACE WITH NSX SERVICE ACCOUNT PASSWORD-->"
+    description = "<!--REPLACE WITH NSX CLOUD ACCOUNT DESCRIPTION-->"
+    tag_region   = "<!--REPLACE WITH CLOUD ACCOUNT NSX TAG-->"
+  }
+}
+
+accept_self_signed = true
+cloud_proxy        = "<!--REPLACE WITH CLOUD PROXY NAME-->"
